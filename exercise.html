@@ -80,7 +80,7 @@
                   <div class="col-md-6">
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
-                        <h4 class="make_text">Find Factors Program in C</h4>
+                        <h4 class="make_text">Find Factors </h4>
                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
 main()
 {
@@ -109,23 +109,24 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Sum of N Number</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,i,sum = 0;<br>
-                              
-                              &ensp;printf("Enter the Last number :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                              &ensp;printf("\nFactors of %d are\n\n",a);<br><br>
-                           
-                              &ensp;for(i=0; i<=n; i++)<br>
-                              &ensp;{<br>
-                                 &ensp;     &emsp;sum = sum + i;<br>
-                                     }<br>
-                                     &ensp;     &emsp printf("Sum is => %d",sum);
-                           <br>}</p><br>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int n,i=0,sum=0;
+	
+	printf("Enter Last value of sum :");
+	scanf("%d",&amp;n);
+    
+    for(i=1; i&lt;=n; i++)
+    {
+    	sum += i;
+	}
+
+	printf("Sum of all numbers =&gt; %d",sum);
+	
+
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -136,29 +137,31 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Fibonaci Series</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,i,a,b,c;<br>
-                              
-                              &ensp;printf("Enter the Last value :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                           <br>
-                               &ensp;a = 0;<br>
-                               &ensp;b = 1;<br>
-                               &ensp;c = 0;<br>
-                           
-                              &ensp;for(i=1; i<=n; i++)<br>
-                              &ensp;{<br>
-                                 &ensp;     &emsp;printf("%d ",c);<br>
-                                 &emsp; a = b;<br>
-                                 &emsp; b = c;<br>
-                                 &emsp; c = a + b;<br>
-                                    &ensp; }<br>
-                                     
-                           <br>}</p><br>
+                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+int main()
+{
+	int n,i,a,b,c;
+	
+	printf("Enter Length of Series :");
+	scanf("%d",&amp;n);
+	
+	a=0;
+	b=1;
+	c=0;
+		
+	
+	for(i=1; i&lt;=n; i++)
+	{
+		printf(" %d ,",c);
+	
+		a = b;
+		b = c;
+		c = a+b;
+	}
+
+	
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -170,25 +173,29 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Squre of 1 to N Value</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,i,c;<br>
-                              
-                              &ensp;printf("Enter the Last value :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                              &ensp; <br>printf("Number &emsp;Squre\n");<br>
+                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
 
-                              &ensp;for(i=1; i<=n; i++)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; c = i * i;<br>
-                                 &ensp;&ensp;&emsp;printf("%d &emsp; =>  %d \n",i,c);<br>
-                                 
-                                    &ensp; }<br>
-                                     
-                           <br>}</p><br>
+main()
+{
+	int i,n,c;
+	
+
+	printf("Enter last value to find squre : ");
+	scanf("%d",&amp;n);
+	
+	printf("Number   Squre\n");
+	
+	for(i=1; i&lt;=n; i++)
+	{
+		c=i*i;
+		printf("%d    =&gt;    %d\n",i,c);
+		
+	}
+	
+
+	
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
