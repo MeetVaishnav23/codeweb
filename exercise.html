@@ -81,26 +81,25 @@
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Find Factors Program in C</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int a,i;<br>
-                              
-                              &ensp;printf("Enter the number to find the factors :");<br>
-                              &ensp;scanf("%d",&a);<br>
-                              
-                              &ensp;printf("\nFactors of %d are\n\n",a);<br><br>
-                           
-                              &ensp;for(i=1; i<=a; i++)<br>
-                              &ensp;{<br>
-                                 &ensp;     &emsp;if(a%i == 0)<br>
-                                 &ensp;     &emsp;{<br>
-                                    &ensp;      &emsp;&emsp;  printf("%d,",i);<br>
-                                    &ensp;      &emsp; }	<br>
-                                    &ensp; }<br>
-                              
-                           }</p>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int a,i;
+
+	printf("Enter the number to find the factors :");
+	scanf("%d",&amp;a);
+	
+	printf("\nFactors of %d are\n\n",a);
+	
+	for(i=1; i&lt;=a; i++)
+	{
+		if(a%i == 0)
+		{
+			printf("%d,",i);
+		}
+	}
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                      </div>
                      
