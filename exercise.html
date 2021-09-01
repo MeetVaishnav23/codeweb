@@ -240,26 +240,29 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">First and Last Digit Sum</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,sum,last;<br>
-                              
-                              &ensp;printf("Enter the value :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                             <br> &ensp;last = n % 10;<br>
+                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+int main()
+{
+ 	int n,sum,last;
+ 	
+	printf("Enter the value :");
+ 	scanf("%d",&amp;n);
 
-                              &ensp;while(n > 10)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; n = n/10;<br>
-                               &ensp; }<br>
+ 	last = n % 10;
+ 	
+	 while(n &gt; 10)
+ 	{
+  		n = n/10;
+  	}
 
-                               <br>&ensp; sum = last+n;
-                               <br>&ensp; printf("%d and %d sum is => %d",n,last,sum);
-                                     
-                           <br>}</p><br>
+  	sum = last+n;
+  	
+	printf("%d and %d sum is =&gt; %d",n,last,sum);
+
+}
+
+
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -270,26 +273,24 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Factorial find</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,i,f=1;<br>
-                              
-                              &ensp;printf("Enter the value :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                           <br> 
-                           
-                              &ensp;for(i=1; i<=n; i++)<br>
-                              &ensp;{<br>
-                                 
-                                 &emsp; f = f * i;
-                              <br>&ensp; }<br>
-                                    
-                              &emsp;printf("Factorial is => %d",f);<br>
+<pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int n,i,f=1;
+	
+	printf("Enter value of Factorial :");
+	scanf("%d",&amp;n);
+	
+	for(i=1; i&lt;=n; i++)
+	{
+		f = f * i;
+	}
+	
+	printf("%d Factorial is =&gt; %d",n,f);
+	
 
-                           <br>}</p><br>
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -301,36 +302,36 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Palindrome Number</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,r=0,temp,rev;<br>
-                              
-                              &ensp;printf("Enter Number :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                             <br> &ensp;temp = n;<br>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+int main()
+{
+ 	int n,r=0,temp,rev;
+ 	
+	printf("Enter Number :");
+ 	scanf("%d",&amp;n);
 
-                              &ensp;while(n > 0)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; r = n%10;<br>
-                                 &emsp;&emsp; rev = rev * 10 + r;<br>
-                                 &emsp;&emsp; n = n / 10;<br>
+ 	temp = n;
+ 	
+ 	while(n &gt; 0)
+ 	{
+   		r = n%10;
+   		rev = rev * 10 + r;
+   		n = n / 10;
+ 	}
 
-                               &ensp; }<br>
+  	if(temp == rev)
+  	{
+  		 printf("%d is Palindrome Number ",temp);
+ 	}
+ 	else
+ 	{
+ 		 printf("%d is Not Palindrome Number ",temp);
+ 	}
 
-                               <br>&ensp; if(temp == rev)
-                               <br>&ensp;&ensp;{
-                                 <br>&emsp;&emsp; printf("%d is Palindrome Number ",temp);
-                                 <br>&emsp;}
-                                 <br>&emsp;else
-                                 <br>&emsp;{
-                                    <br>&emsp;&emsp;printf("%d is Not Palindrome Number ",temp);
-                                <br>&emsp; }
-                               <br>
-                                     
-                           <br>}</p><br>
+}
+
+
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -341,29 +342,25 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Reverse Number</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,r=0,temp,rev;<br>
-                              
-                              &ensp;printf("Enter Number :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                             <br> 
+                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int r,v=0,n;
+	
+	printf("Enter number :");
+	scanf("%d",&amp;n);
+	
+	while(n!=0)
+	{
+	    r=n%10;
+	    v=v*10+r;
+	    n=n/10;
+	}
+	
+	printf("Reverse Number is =&gt; %d",v);
 
-                              &ensp;while(n != 0)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; r = n%10;<br>
-                                 &emsp;&emsp; rev = rev * 10 + r;<br>
-                                 &emsp;&emsp; n = n / 10;<br>
-
-                               &ensp; }<br>
-
-                               <br>
-                               printf("Reverse Numbe is => %d",rev);
-                                     
-                           <br>}</p><br>
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -374,29 +371,31 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">All Digit Sum</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,r=0,sum=0;<br>
-                              
-                              &ensp;printf("Enter Number :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                             <br>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int n,r,sum=0,temp;
+	
+	printf("Enter value :");
+	scanf("%d",&amp;n);
+	
+	temp = n;
+	
+	while(n&gt;0)
+	{
+		r = n%10;
+		
+		sum = sum+r;
+		
+		n=n/10;
+		
+	}
+	
+	printf("%d number All digits Sum is =&gt; %d",temp,sum);
+	
 
-                              &ensp;while(n > 0)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; r = n%10;<br>
-                                 &emsp;&emsp; sum = sum + r;<br>
-                                 &emsp;&emsp; n = n / 10;<br>
-
-                               &ensp; }<br>
-
-                               <br> printf("Entered Number All Digit Sum is => %d ",sum);<br>
-                                 
-                                     
-                           <br>}</p><br>
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -408,43 +407,42 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">krishnamurthy Number</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int n,i,temp=0,r,f=1,sum=0;<br>
-                              
-                              &ensp;printf("Enter Number :");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                             <br> &ensp;temp = n;<br>
-
-                              &ensp;while(n != 0)<br>
-                              &ensp;{<br>
-                                 &emsp;&emsp; r = n%10;<br>
-                                 &emsp;&emsp; f = 1;<br>
-                                 &emsp;&emsp; for(i=1; i<=r; i++)<br>
-                                 &emsp;&emsp; {<br>
-                                 &emsp;&emsp; &emsp; f = f * i;<br>
-                                 &emsp;&emsp; }<br>
-                                 &emsp;&emsp;  sum = sum + f;<br>
-                                 &emsp;&emsp;  n = n / 10;<br>
-                                 
-                                
-
-                               &ensp; }<br>
-
-                               <br>&ensp; if(sum == temp)
-                               <br>&ensp;&ensp;{
-                                 <br>&emsp;&emsp; printf("%d is krishnamurthy Number ",temp);
-                                 <br>&emsp;}
-                                 <br>&emsp;else
-                                 <br>&emsp;{
-                                    <br>&emsp;&emsp;printf("%d is Not krishnamurthy Number ",temp);
-                                <br>&emsp; }
-                               <br>
-                                     
-                           <br>}</p><br>
+                        <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int n,i,temp=0,r,f=1,sum=0;
+	
+	printf("Enter number :");
+	scanf("%d",&amp;n);
+	
+	temp=n;
+	while(n!=0)
+	{
+		
+		r=n%10;
+		f=1;
+		
+		for(i=1; i&lt;=r; i++)
+		{
+			f=f*i;
+		}
+		
+		sum=sum+f;
+		n=n/10;
+	}
+	
+		
+	if(sum==temp)
+	{
+		printf("==&gt; %d is Krishnamurthy Number &lt;==",temp);
+	}
+	else
+	{
+		printf("==&gt; %d is Not Krishnamurthy Number &lt;==",temp);
+	}
+	
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -456,28 +454,28 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Swap Two Value</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int x,y,temp;<br>
-                              
-                              &ensp;printf("Enter the value of X :");<br>
-                              &ensp;scanf("%d",&x);<br><br>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	
+	int a,b;
+	
+	printf("Enter the value of A :");
+	scanf("%d",&amp;a);
+	
+	printf("Enter the value of B : ");
+	scanf("%d",&amp;b);
 
-                              &ensp;printf("Enter the value of Y :");<br>
-                              &ensp;scanf("%d",&y);<br>
-                              
-                           <br>
-                               &ensp;temp = x;<br>
-                               &ensp;x = y;<br>
-                               &ensp;y = temp;<br><br>
-                           
-                              &ensp;printf("After Swapping  X => %d \n",x);<br>
-                              &ensp;printf("After Swapping  Y => %d ",y);<br>
-                                
-                                     
-                           <br>}</p><br>
+    
+    a = a+b;  
+	b = a-b;  
+	a = a-b;
+	
+	printf("After swapping  a = %d  ,  b = %d",a,b);
+	
+	
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
@@ -489,37 +487,37 @@ main()
                      <div class="news_taital_box">
                         <p class="date_text">22 Aug 2021</p>
                         <h4 class="make_text">Prime Number Series</h4>
-                        <p class="lorem_text">#include &lt;stdio.h&gt;<br>
-                           main()<br>
-                           {<br>
-                              
-                              &ensp;int i , j , k , n; <br>
-                              
-                              &ensp;printf("Enter the value : ");<br>
-                              &ensp;scanf("%d",&n);<br>
-                              
-                           <br> 
-                           
-                              &ensp;for(i=2; i<=n-1; i++) <br>
-                              &ensp;{<br>
-                                      &emsp; k =0;<br>
-                                      &emsp;&emsp;for(j=2; j<=i-1; j++) <br>
-                                      &emsp;&emsp;{<br>
-                                                         &emsp;&emsp;&emsp;if(i % j == 0)<br>
-                                                         &emsp;&emsp;&emsp;{<br>
-                                                            &emsp;&emsp;&emsp;&emsp;   k = 1; <br>
-                                                            &emsp;&emsp;&emsp;&emsp;   break;<br>
-                                                            &emsp;&emsp;&emsp;}<br>
-                                                            &emsp;&emsp;}<br>
-                                                            &emsp;&emsp;if(k == 0)<br>
-                                                            &emsp;&ensp; {<br>
-                                                               &emsp;&emsp;&emsp;  printf("%d ",i);<br>
-                                                               &emsp;&emsp;}
-                                 
-                              <br>&ensp; }<br>
-                                    
-                  
-                           <br>}</p><br>
+                       <pre style="word-wrap: break-word; white-space: pre-wrap;">#include&lt;stdio.h&gt;
+main()
+{
+	int i,j,k,n;
+	
+	printf("Enter Number of Length : ");
+	scanf("%d",&amp;n);
+	
+	for(i=2; i&lt;n; i++)
+	{
+		k=0;
+		for(j=2; j&lt;i; j++)
+		{
+			if(i%j==0)
+			{
+				k = 1; 
+				break;
+			}
+		}
+		
+		if(k==0)
+		{
+			printf("%d , ",i);
+		}
+		
+	}
+	
+	
+	
+}
+</pre>
                         <p class="post_text">Created By : MV</p>
                         <br>
                      </div>
